@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head>
+    
+    
+    </head>
+    <body>
+        
+    <style>
+        
+        #sum {
+        color: red;
+        
+        }   
+        
+        #result {
+        color : red;
+        
+        }
+        
+        
+        #sub {
+        
+        color: blue;
+        
+        
+        }
+        
+        #result2 {
+        
+        color: blue;
+        
+        }
+        
+        #mul {
+        
+        
+        color: #ff00ff;
+            
+        }
+        
+        #result3 {
+        color: #ff00ff;
+        }
+        
+        
+        
+        </style>    
+        
+    <div>
+        <input id="number-one" type="text">
+        <input id="number-two" type="text">
+        
+        <button id="sum">Sum</button>
+        
+        <p id="result"></p>
+     
+       </div> 
+        
+         <div>
+        <input id="number-three" type="text">
+        <input id="number-four" type="text">
+        
+        <button id="sub">Substract</button>
+        
+        <p id="result2"></p>
+     
+       </div>  
+        
+          <div>
+        <input id="number-five" type="text">
+        <input id="number-six" type="text">
+        
+        <button id="mul">Multiply</button>
+        
+        <p id="result3"></p>
+     
+       </div>
+        <script>
+        
+document.getElementById('sum').addEventListener('click',function() {
+   
+    var numberOne = document.getElementById('number-one').value
+    var numberTwo = document.getElementById('number-two').value
+                                                
+var result = parseInt(numberOne) + parseInt(numberTwo);
+
+    document.getElementById('result').innerHTML = result;
+                                                
+    });
+
+document.getElementById('sub').addEventListener('click', function() {
+   
+    var numberThree = document.getElementById('number-three').value
+    var numberFour = document.getElementById('number-four').value
+                                                
+var result2 = parseInt(numberThree) - parseInt(numberFour);
+
+    document.getElementById('result2').innerHTML = result2;
+                                                
+    });
+            
+document.getElementById('mul').addEventListener('click', function() {
+   
+    var numberFive = document.getElementById('number-five').value
+    var numberSix = document.getElementById('number-six').value
+                                                
+var result3 = parseInt(numberFive) * parseInt(numberSix);
+
+    document.getElementById('result3').innerHTML = result3;
+                                                
+    });
+
+
+
+            
+            
+    </script>
+    
+    </body>
+    
+    
+    
+</html>
